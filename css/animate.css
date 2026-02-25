@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+.teks-berjalan {
+  display: inline-block;
+  white-space: nowrap;
+  transform: translateX(-100%);      	/* mulai dari kanan */
+  animation: jalan 10s linear forwards;	/* berhenti */
+}
+@keyframes jalan {
+  0% {
+    transform: translateX(-55%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
